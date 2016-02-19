@@ -1,0 +1,209 @@
+h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    font-family: 仿宋,sans-serif;
+    color: blue;
+    white-space: pre-line;
+}
+a {
+    color: blue;
+    font-weight: 900;
+    text-decoration: overline;
+}
+h2 {
+    font-size: 14px;
+    text-indent: 2em;
+    word-spacing: inherit;
+}
+p {
+    font-size: 12px;
+    color: yellow;
+    background-color: black;
+    text-align: center;
+    line-height: 18px;
+}
+img {
+    border: 2px red solid;
+}
+/*三种方式实现定宽块状元素居中*/
+/*边距自适应*/
+.div1 {
+    background-color: red;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*相对定位加负边距，宽度必须大于元素宽度，不适用*/
+/*.div2 {*/
+    /*background-color: red;*/
+    /*width: 960px;*/
+    /*position: relative;*/
+    /*left: 50%;*/
+    /*margin-left: -480px;*/
+    /*text-align: center;*/
+/*}*/
+/*使用text-align*/
+.div3 {
+    text-align: center;
+}
+.div3in {
+    width: 960px;
+    display: inline-block;
+    background-color: red;
+}
+/*自适应的圆角矩形*/
+.div4 {
+    height: 120px;
+    border-left: 1px #26c2ff solid;
+    border-right: 1px #26c2ff solid;
+}
+.by1 {
+    height: 1px;
+    background-color: #26c2ff;
+    margin: 0 5px;
+}
+.by2 {
+    height: 1px;
+    border-left: 2px #26C2FF solid;
+    border-right: 2px #26C2FF solid;
+    margin: 0 3px;
+}
+.by3 {
+    height: 1px;
+    border-left: 1px #26C2FF solid;
+    border-right: 1px #26C2FF solid;
+    margin: 0 2px;
+}
+.by4 {
+    height: 1px;
+    border-left: 1px #26C2FF solid;
+    border-right: 1px #26C2FF solid;
+    margin: 0 1px;
+}
+.by5 {
+    height: 1px;
+    border-left: 1px #26C2FF solid;
+    border-right: 1px #26C2FF solid;
+    margin: 0 1px;
+}
+/*用三种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化*/
+/*使用浮动*/
+.div5-a {
+    height: 60px;
+    width: 60px;
+    background: red;
+    float: left;
+}
+.div5-b {
+    height: 60px;
+    background: blue;
+}
+.div5-c {
+    height: 60px;
+    background: yellow;
+}
+/*使用绝对定位属性布局*/
+.div6-a {
+    height: 60px;
+    width: 60px;
+    background: red;
+    position: absolute;
+}
+.div6-b {
+    height: 60px;
+    background: blue;
+    margin-left: 60px;
+}
+.div6-c {
+    height: 60px;
+    background: yellow;
+}
+/*弹性布局*/
+.div7ab {
+    display: flex;
+}
+.div7-a {
+    height: 60px;
+    width: 60px;
+    background: red;
+}
+.div7-b {
+    flex: 1;
+    height: 60px;
+    background: blue;
+}
+.div7-c {
+    height: 60px;
+    background: yellow;
+}
+/*用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化*/
+/*浮动布局*/
+.div8-a {
+    height: 60px;
+    width: 60px;
+    background: red;
+    float: left;
+}
+.div8-b {
+    height: 60px;
+    background: blue;
+}
+.div8-c {
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    float: right;
+}
+/*负边距*/
+.div9-a {
+    height: 60px;
+    width: 60px;
+    background: red;
+    margin-top: -60px;
+}
+.div9-b {
+    height: 60px;
+    background: blue;
+    margin: 0 60px;
+}
+.div9-c {
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    float: right;
+    margin-top: -60px;
+}
+/*绝对定位*/
+.div10ac {
+    position: relative;
+}
+.div10-a {
+     width: 60px;
+     height: 60px;
+     background: red;
+    position: absolute;
+ }
+.div10-b {
+    height: 60px;
+    background: blue;
+    margin-left: 60px;
+}
+.div10-c {
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    position: absolute;
+    right: 0;
+}
+/*实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化*/
+.box1 {
+    height: 90px;
+    width: 120px;
+    background: blue;
+    margin: 10px;
+    float: left;
+}
+.box {
+    background: red;
+    overflow: hidden;
+}
